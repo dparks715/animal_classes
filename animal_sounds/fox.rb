@@ -7,4 +7,8 @@ class Fox
 		@sound = 'GET TO THE CHOPPA'
 	end
 
+	def get_sound
+		"#{name} says #{sound}"	
+	end
+
 end

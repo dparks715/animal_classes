@@ -41,10 +41,21 @@ class TestAnimalSounds < Minitest::Test
 		assert_equal('GET TO THE CHOPPA', animal.sound)
 	end
 
+	# Test get_sound function
+
 	def test_what_cat_says
 		animal = Cat.new('Ted')
-		assert_equal('Ted says meow', animal.get_sound)
-		
+		assert_equal('Ted says meow', animal.get_sound)	
+	end
+
+	def test_what_dog_says
+		animal = Dog.new('Fernando')
+		assert_equal('Fernando says woof', animal.get_sound)	
+	end
+
+	def test_what_fox_says
+		animal = Fox.new('Captain Ahab')
+		assert_equal('Captain Ahab says GET TO THE CHOPPA', animal.get_sound)	
 	end
 
 end
