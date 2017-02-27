@@ -4,7 +4,7 @@ class Fox
 
 	def initialize(name)
 		@name = name
-		@sound = 'GET TO THE CHOPPA'
+		@sound = 'Hi'
 	end
 
 	def get_sound

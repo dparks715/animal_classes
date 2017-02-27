@@ -32,13 +32,13 @@ class TestAnimalSounds < Minitest::Test
 	# Fox tests
 
 	def test_fox_name
-		animal = Fox.new('Ahnold')
-		assert_equal('Ahnold', animal.name)
+		animal = Fox.new('Arnold')
+		assert_equal('Arnold', animal.name)
 	end
 
 	def test_fox_sound
-		animal = Fox.new('Ahnold')
-		assert_equal('GET TO THE CHOPPA', animal.sound)
+		animal = Fox.new('Arnold')
+		assert_equal('Hi', animal.sound)
 	end
 
 	# Test get_sound function
@@ -55,7 +55,7 @@ class TestAnimalSounds < Minitest::Test
 
 	def test_what_fox_says
 		animal = Fox.new('Captain Ahab')
-		assert_equal('Captain Ahab says GET TO THE CHOPPA', animal.get_sound)	
+		assert_equal('Captain Ahab says Hi', animal.get_sound)	
 	end
 
 end
